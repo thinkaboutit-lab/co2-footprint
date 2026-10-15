@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5cb85c"></stop>
+      <stop offset="100%" stop-color="#198754"></stop>
+    </linearGradient>
+
+    <linearGradient id="earthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"></stop>
+      <stop offset="100%" stop-color="#2E7D32"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Kreis -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#198754" stroke-width="14"></circle>
+
+  <!-- Kontinente -->
+  <path fill="url(#earthGradient)" d="M175 120
+         C140 135 120 170 125 210
+         C132 250 165 285 155 320
+         C150 340 170 360 205 350
+         C230 343 238 315 255 300
+         C275 282 275 250 250 230
+         C225 208 205 180 205 155
+         C205 138 193 126 175 120Z"></path>
+
+  <path fill="url(#earthGradient)" d="M315 155
+         C350 145 385 165 392 200
+         C400 240 372 280 340 292
+         C320 300 300 288 298 265
+         C295 235 305 210 315 155Z"></path>
+
+  <!-- Blatt -->
+  <path d="M250 360
+         C320 290 420 305 435 365
+         C380 425 295 420 250 360Z" fill="url(#leafGradient)"></path>
+
+  <path d="M275 382
+         C315 360 345 338 390 318" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round"></path>
+
+  <!-- CO2 -->
+  <g transform="translate(330 145)">
+    <ellipse cx="40" cy="30" rx="55" ry="28" fill="white" stroke="#198754" stroke-width="6"></ellipse>
+
+    <text x="40" y="40" text-anchor="middle" font-size="32" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#198754">
+      CO₂
+    </text>
+  </g>
+</svg>
